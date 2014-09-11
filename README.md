@@ -99,12 +99,12 @@ Usage
 Create your bucket from S3 and Config the attribute :
 default[:duply][:s3][:target] 
 
-Getting your Access hey ID and secret access key from [ IAM console.](https://console.aws.amazon.com/iam/home?#home) and config the attributes:
+Get your Access key ID and secret access key from [ IAM console.](https://console.aws.amazon.com/iam/home?#home) and config the attributes:
 
-default[:duply][:s3][:target_user] 
-default[:duply][:s3][:target_pass]
+**default[:duply][:s3][:target_user]**  and
+**default[:duply][:s3][:target_pass]**
 
-You might need to attach user policy to your access ID, for test purpose, you can assign Amazon S3 Full Access policy
+You might need to attach user policy to your access ID, for test purpose, you can assign *Amazon S3 Full Access policy* , e.g.
 
 ```
 {
@@ -120,7 +120,7 @@ You might need to attach user policy to your access ID, for test purpose, you ca
 ```
 
 Furthermore, you may want to config: 
-**default[:duply][:s3][:source]** and **default[:duply][:s3][:includes]** to specify the base directory and subfolders inside to be included
+**default[:duply][:s3][:source]** and **default[:duply][:s3][:includes]** to specify the base directory and sub-folders inside to be included when backup.
 
 
 Finally, include `duply` in your node's `run_list`:
